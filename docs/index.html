@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cherry Rose N. Lagunay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "-OhIh79mZK8KuFIrG",
+      });
+   })();
+</script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#home"><i class="fas fa-home"></i></a>
+        <a href="#services"><i class="fas fa-cog"></i></a>
+        <a href="#skills"><i class="fas fa-laptop-code"></i></a>
+        <a href="#experience"><i class="fas fa-briefcase"></i></a>
+        <a href="#contact"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+  
+            <img src="img/Cherry1.jpg" alt="Profile Picture"  class="profile-picture">
+            <h1>I am, Cherry Rose N. Lagunay</h1>
+            <h2>I'm a BSIT STUDENT</h2>
+            <p>I am 21 years old, pursuing a Bachelor of Science in Information Technology at City of Malabon University.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h1>Services</h2>
+            <h3>Here, I offer various web development, software engineering, and IT services.</p>
+            <div class="container">
+                <div class="box">
+                    <div class="icon">&#60;&#47;&#62;</div>
+                    <h2>Developer</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">🎨</div>
+                    <h2>Creative Design</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">➕</div>
+                    <h2>High Quality</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, and more.</p>
+            <div class="progress-bar">
+                <label>HTML</label>
+                <div class="bar"><span style="width: 60%;"></span></div>
+            </div>
+
+            <div class="progress-bar">
+                <label>CSS</label>
+                <div class="bar">
+                    <span style="width: 50%;"></span> <!-- CSS proficiency: 85% -->
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <label>Javascript</label>
+                <div class="bar">
+                    <span style="width: 10%;"></span> <!-- PHP proficiency: 70% -->
+                </div>
+            </div>            
+        </section>
+
+        <section id="experience">
+            <h1>Experience</h1>
+            <h3>Freelance projects and internships in web development.</h3>
+            <div class="container">
+                <!-- First box -->
+                <div class="box">
+                    <img src="img/exp1.png" alt="Project 1">
+                    <h2>Group Project</h2>
+                    <p>I made an About me</p>
+                </div>
+                <!-- Second box -->
+                <div class="box">
+                    <img src="img/exp2.png" alt="Project 2">
+                    <h2>Group Project</h2>
+                    <p>I made a related Picture and Videos for our webpage.</p>
+                </div>
+                <!-- Third box -->
+                <div class="box">
+                    <img src="img/exp3.png" alt="Project 3">
+                    <h2>Personal Portfolio</h2>
+                    <p>I made my own personal Portfolio</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact ME!</h2>
+            <p>Email me at lagunaycherryrosenajos@gmail.com!</p>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                  <input type="text" id="name" placeholder="Your Name" required />
+                  <input type="email" id="email" placeholder="Your Email" required />
+                  <textarea id="message" placeholder="Your Message" required></textarea>
+                  <button type="button" onclick="sendMail()">Submit</button>
+                </form>
+              </div>
+        </section>
+    </div>
+
+</body>
+</html>
